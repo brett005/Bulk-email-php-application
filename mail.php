@@ -1,6 +1,6 @@
 <?php
 
-$connect = new PDO("mysql:host=localhost;dbname=hebnicin_mail", "hebnicin_plag", "wp75VT37oz");
+$connect = new PDO("mysql:host=localhost;dbname=db-name", "user", "pswd");
 $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $query2 = "select * from count where id = 1";
 $statement2 = $connect->prepare($query2);
