@@ -1,1 +1,1 @@
-/usr/bin/php -q /home/hebnicin/public_html/mail/cron.php
+/usr/bin/php -q /home/website-name/public_html/mail/cron.php
