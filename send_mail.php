@@ -17,11 +17,11 @@ if(isset($_POST['email_data']))
 		$mail->Host = 'localhost';		//Sets the SMTP hosts of your Email hosting, this for Godaddy
 		$mail->Port = '25';								//Sets the default SMTP server port
 		$mail->SMTPAuth = true;							//Sets SMTP authentication. Utilizes the Username and Password variables
-		$mail->Username = 'service@heb-nic.in';					//Sets SMTP username
-		$mail->Password = 'Ekdant123';					//Sets SMTP password
+		$mail->Username = 'username';					//Sets SMTP username
+		$mail->Password = 'password';					//Sets SMTP password
 		$mail->SMTPSecure = '';							//Sets connection prefix. Options are "", "ssl" or "tls"
-		$mail->From = 'service@heb-nic.in';			//Sets the From email address for the message
-		$mail->FromName = 'HEALTH EDUCATION BUREAU';					//Sets the From name of the message
+		$mail->From = 'email';			//Sets the From email address for the message
+		$mail->FromName = 'Name';					//Sets the From name of the message
 		$mail->AddAddress($row["email"], $row["name"]);	//Adds a "To" address
 		$mail->WordWrap = 50;							//Sets word wrapping on the body of the message to a given number of characters
 		$mail->IsHTML(true);							//Sets message type to HTML
